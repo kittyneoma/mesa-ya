@@ -51,7 +51,7 @@ class Reservation {
     return rows[0];
   }
 
-  static async checkAvailability(tableId, date, time) {
+  static async checkAvailability(tableId, date, startTime, endTime) {
     const { rows } = await pool.query(
       `SELECT id FROM reservations 
       WHERE table_id=$1 AND reservation_date=$2
