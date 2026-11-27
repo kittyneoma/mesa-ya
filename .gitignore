@@ -1,0 +1,12 @@
+# dependencias
+node_modules/
+
+# secretos
+.env
+.env.*
+!.env.example
+
+# builds y reportes
+dist/
+coverage/
+*.log
